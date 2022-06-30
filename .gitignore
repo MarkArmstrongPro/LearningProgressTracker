@@ -25,3 +25,4 @@ hs_err_pid*
 # all hyperskill files
 /build
 /test
+*.gradle
