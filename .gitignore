@@ -23,9 +23,9 @@
 hs_err_pid*
 
 # all hyperskill files
-/build
-/test
-/out
+build/
+test/
+out/
 
 .gitignore
 *.gradle
