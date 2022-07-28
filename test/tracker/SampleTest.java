@@ -3,7 +3,7 @@ package tracker;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static tracker.Main.patternMatches;
+import static tracker.Student.patternMatches;
 
 public class SampleTest {
 

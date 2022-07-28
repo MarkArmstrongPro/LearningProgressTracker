@@ -11,13 +11,13 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class MainTests {
+class StudentTests {
     @Test
     @DisplayName("email should be checked")
     void testIsValidEmail() {
-        assertTrue(Main.isValidEmail("some@gmail.com"));
-        assertTrue(Main.isValidEmail("SoMe123@gmail.com"));
-        assertFalse(Main.isValidEmail("somegmail.com"));
+        assertTrue(Student.isValidEmail("some@gmail.com"));
+        assertTrue(Student.isValidEmail("SoMe123@gmail.com"));
+        assertFalse(Student.isValidEmail("somegmail.com"));
     }
 
     @ParameterizedTest(name = "{index} : isValidEmail({1}) => {2}")
@@ -27,13 +27,13 @@ public class MainTests {
             "somegmail.com, false"
     })
     void testIsValidEmailParameterized(String email, boolean expected) {
-        assertEquals(expected, Main.isValidEmail(email));
+        assertEquals(expected, Student.isValidEmail(email));
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"some@mail.com", "another@email.org"})
     void testIsValidEmailParameterizedValues(String arg){
-        assertTrue(Main.isValidEmail(arg));
+        assertTrue(Student.isValidEmail(arg));
     }
 
     @ParameterizedTest
