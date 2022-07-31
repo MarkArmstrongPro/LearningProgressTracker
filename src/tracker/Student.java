@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class Student {
 
-    private static int id = 0;
+    private static int id = 9999;
     private String firstName;
     private String lastName;
     private String email;
